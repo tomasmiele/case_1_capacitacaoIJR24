@@ -1,0 +1,14 @@
+.box {
+    height: 60px;
+    width: 120px;
+}
+
+.box .boto {
+    background-color: #4b6eaf;
+    border-radius: 20px;
+    height: 60px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 120px;
+}
