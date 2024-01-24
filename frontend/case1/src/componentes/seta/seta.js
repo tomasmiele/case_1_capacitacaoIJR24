@@ -1,10 +1,7 @@
 import React from "react";
 import "./seta.css";
+import setaImg from '../../images/seta.png';
 
 export const Seta = () => {
-    return (
-        <div className="image">
-            <img className="seta" alt="Seta" src="seta.png" />
-        </div>
-    );
+    return <img className="seta" alt="seta" src={setaImg} />;
 };

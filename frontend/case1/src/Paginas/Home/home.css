@@ -1,0 +1,455 @@
+.home {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+  }
+  
+  .home .div {
+    background-color: #ffffff;
+    max-width: 1440px; 
+    width: 100%;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .home .footer, .home .navbar {
+        width: 100%; 
+    }
+    .home .text-wrapper, .home .inicialmente, .home .p {
+        font-size: 16px; 
+    }
+    .home .text-wrapper-10, .home .text-wrapper-11, .home .text-wrapper-12, .home .text-wrapper-13 {
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto; 
+    }
+  
+    .home .text-wrapper-10 {
+      top: 60px;
+    }
+  
+    .home .text-wrapper-11 {
+      top: 80px;
+    }
+  
+    .home .text-wrapper-12 {
+      top: 100px;
+    }
+  
+    .home .text-wrapper-13 {
+      top: 120px;
+    }
+  
+    .home .footer {
+      top: auto; 
+      bottom: 0; 
+    }
+  
+    .home .text-wrapper, .home .text-wrapper-2, .home .text-wrapper-3, .home .text-wrapper-4, .home .text-wrapper-5, .home .text-wrapper-6, .home .whatsapp, .home .image {
+      left: 50%; 
+      transform: translateX(-50%); 
+      width: auto; 
+    }
+  
+    .home .frame, .home .div-wrapper {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%; 
+    }
+  
+    .home .text-wrapper-5, .home .text-wrapper-6, .home .whatsapp {
+      top: auto; 
+      bottom: 50px; 
+    }
+  
+    .home .image-container {
+      display: flex; /* Usa Flexbox para alinhar as imagens */
+      justify-content: space-around; /* Espaçamento proporcional entre as imagens */
+      align-items: center; /* Centraliza as imagens verticalmente */
+      width: 100%; /* Largura total do contêiner */
+    }
+    
+    .home .image-rede-social {
+      width: 50px; /* Largura fixa para as imagens */
+      height: 50px; /* Altura fixa para as imagens */
+      object-fit: contain; /* Mantém a proporção das imagens sem cortá-las */
+    }
+  
+    .home .span, .home .text-wrapper-2 {
+      font-size: 14px;
+    }
+  
+    .home .image-rede-social {
+      width: 30px; 
+      height: 30px;
+    }
+  }
+  
+  .home .footer {
+    background-color: #4b6eaf;
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 1340px;
+    width: 100%;
+  }
+  
+  .home .text-wrapper {
+    color: #ffffff;
+    font-family: "Archivo-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 1210px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 35px;
+    white-space: nowrap;
+    width: 208px;
+  }
+  
+  .home .desaja-saber-mais-ou {
+    color: transparent;
+    font-family: "TharLon-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 9px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    width: 300px;
+  }
+  
+  .home .span, .home .text-wrapper-2 {
+    display: block; 
+    text-align: center; 
+    color: #ffffff; 
+    width: 100%; 
+    margin: 0 auto; 
+  }
+  
+  .home .span {
+    font-size: 16px; 
+  }
+  
+  .home .text-wrapper-2 {
+    color: #a9cce3; 
+    font-size: 14px; 
+  }
+  
+  .home .frame {
+    background-color: #d4d4d4;
+    height: 20px;
+    left: 319px;
+    overflow: hidden;
+    position: absolute;
+    top: 6px;
+    width: 220px;
+  }
+  
+  .home .text-wrapper-3 {
+    color: #4b6eaf;
+    font-family: "TharLon-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: -6px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    width: 110px;
+  }
+  
+  .home .div-wrapper {
+    background-color: #d4d4d4;
+    height: 45px;
+    left: 319px;
+    position: absolute;
+    top: 32px;
+    width: 220px;
+  }
+  
+  .home .text-wrapper-4 {
+    color: #4b6eaf;
+    font-family: "TharLon-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    width: 70px;
+  }
+  
+  .home .social-media-section {
+    text-align: center; /* Centraliza o conteúdo da seção */
+    margin-top: 10px; /* Espaçamento acima da seção */
+  }
+  
+  .home .text-wrapper-5 {
+    color: #a9cce3;
+    font-family: "TharLon-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px; 
+    letter-spacing: 0;
+    line-height: normal;
+    display: block; 
+    width: 100%;
+  }
+  
+  .home .text-wrapper-6 {
+    color: #a9cce3;
+    font-family: "TharLon-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 820px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+    white-space: nowrap;
+    width: 137px;
+  }
+  
+  .home .whatsapp {
+    color: #a9cce3;
+    font-family: "Archivo-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left:812px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: right;
+    top: 15px;
+    width: 320px;
+  }
+  
+  .home .image {
+    height: 30px;
+    left: 570px;
+    object-fit: cover;
+    position: absolute;
+    top: 30px;
+    width: 30px;
+  }
+  
+  .home .tratamentos {
+    background-color: #ffffff;
+    height: 320px;
+    left: 0;
+    position: absolute;
+    top: 1020px;
+    width: 1440px;
+  }
+  
+  .home .inicialmente {
+    color: #a9cce3;
+    font-family: "Varela-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 160px;
+    left: 355px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 112px;
+    width: 730px;
+  }
+  
+  .home .text-wrapper-7 {
+    color: #4b6eaf;
+    font-family: "Varela-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    height: 53px;
+    left: 355px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 46px;
+    width: 730px;
+  }
+  
+  .home .benefcios {
+    background-color: #ffffff;
+    height: 320px;
+    left: 0;
+    position: absolute;
+    top: 700px;
+    width: 1440px;
+  }
+  
+  .home .p {
+    color: #a9cce3;
+    font-family: "Varela-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 130px;
+    left: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 108px;
+    width: 730px;
+  }
+  
+  .home .text-wrapper-8 {
+    color: #4b6eaf;
+    font-family: "Varela-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    height: 53px;
+    left: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 27px;
+    width: 730px;
+  }
+  
+  .home .hipnoterapia {
+    background-color: #ffffff;
+    height: 320px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 380px;
+    width: 1440px;
+  }
+  
+  .home .a-hipnoterapia-uma-t {
+    color: #a9cce3;
+    font-family: "Varela-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 230px;
+    left: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 108px;
+    width: 730px;
+  }
+  
+  .home .foto {
+    background-image: url(../../images/clinicas-populares.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 300px;
+    left: 0;
+    position: absolute;
+    top: 80px;
+    width: 1440px;
+  }
+  
+  .home .boto {
+    left: 61px !important;
+    position: absolute !important;
+    top: 253px !important;
+    width: 400px !important;
+    }
+    .home .bot-o-instance {
+    width: 400px !important;
+    }
+  
+  .home .text-wrapper-9 {
+    color: #f5f5f5;
+    font-family: "Varela-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 61px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 24px;
+    width: 400px;
+  }
+  
+  .home .boto {
+    left: 61px !important;
+    position: absolute !important;
+    top: 225px !important;
+    width: 400px !important;
+  }
+  
+  .home .bot-o-instance {
+    width: 400px !important;
+  }
+  
+  .home .navbar {
+    background-color: #4b6eaf;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    width: 100%; 
+  }
+  
+  .home .usurio {
+    height: 55px;
+    left: calc(100% - 75px);
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    width: 55px;
+  }
+  
+  .home .text-wrapper-10, .home .text-wrapper-11, .home .text-wrapper-12, .home .text-wrapper-13 {
+    color: #a9cce3;
+    font-family: "Archivo-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 29px;
+  }
+  
+  .home .text-wrapper-10 {
+    left: calc(100% - 185px); 
+    width: 70px;
+  }
+  
+  .home .text-wrapper-11 {
+    left: calc(100% - 295px);
+    width: 90px;
+  }
+  
+  .home .text-wrapper-12 {
+    left: calc(100% - 415px); 
+    width: 100px;
+  }
+  
+  .home .text-wrapper-13 {
+    left: calc(100% - 615px); 
+    width: 185px;
+  }
+  
+  .home .text-wrapper-14 {
+    color: #ffffff;
+    font-family: "Archivo-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 20px; 
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 29px;
+    white-space: nowrap;
+    width: 208px;
+  }

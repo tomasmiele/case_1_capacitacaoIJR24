@@ -1,0 +1,54 @@
+.caixa-de-texto {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #4b6eaf;
+    border-radius: 10px;
+    height: 60px;
+    /* position: relative; */
+    width: 322px;
+    z-index: 1000;
+}
+
+.caixa-de-texto .texto {
+    color: #a9cce3;
+    font-family: "Varela-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    height: 26px;
+    left: 5px;
+    letter-spacing: 0;
+    line-height: normal;
+    /* position: absolute; */
+    /* top: 14px; */
+    width: 310px;
+}
+
+.caixa-de-texto .botaoEnviar {
+    background-color: #4b6eaf;
+    border-radius: 20px;
+    height: 60px;
+    position: relative;
+    width: 120px;
+}
+
+.caixa-de-texto .botaoEnviarTexto {
+    color: #7fcdcd;
+    font-family: "Varela-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    width: 120px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}

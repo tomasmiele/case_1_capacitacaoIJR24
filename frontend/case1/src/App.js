@@ -1,96 +1,27 @@
-import  { Botao }  from "./componentes/botao/botao";
-import './App.css';
-import instagramImg from './images/instagram.png';
-import facebookImg from './images/facebook.png';
-import linkedinImg from './images/linkedin.png';
-import login from './images/login-icon.png';
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./Paginas/Home/home"
+import Login from "./Paginas/Login/login"
+import Cadastro from "./Paginas/Cadastro/cadastro"
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home></Home>
+  },
+  {
+    path: "/login",
+    element: <Login></Login>
+  },
+  {
+    path: "/cadastro",
+    element: <Cadastro></Cadastro>
+  }
+])
 
 function App() {
   return (
-    <div className="home">
-      <div className="div">
-        <div className="navbar">
-          <img className="usurio" alt="Usurio" src={login} />
-          <div className="text-wrapper-10">Contato</div>
-          <div className="text-wrapper-12">Tratamentos</div>
-          <div className="text-wrapper-11">Benefícios</div>
-          <div className="text-wrapper-13">O que é hipnoterapia?</div>
-          <div className="text-wrapper-14">LOGO</div>
-        </div>
-        <div className="foto">
-          <p className="text-wrapper-9">
-          Explore a hipnoterapia e encontre seu caminho para o bem-estar e a harmonia interior
-          </p>
-          <Botao className="boto" divClassName="bot-o-instance" text="Agende sua consulta" />
-        </div>
-        <div className="hipnoterapia">
-          <p className="a-hipnoterapia-uma-t">
-          A hipnoterapia, uma técnica segura e eficaz, apoia terapias focadas em questões emocionais. Com ampla
-          aceitação global e respaldada por diversos estudos científicos, é reconhecida no Brasil pelo Ministério da
-          Saúde e regulada pelos Conselhos Federais de Medicina, Psicologia e Odontologia.
-          <br />
-          <br />
-          Esta abordagem terapêutica, empregando a hipnose clínica, é efetiva no tratamento de transtornos mentais,
-          emocionais e físicos, promovendo a reestruturação de comportamentos e emoções indesejados.
-          </p>
-          <div className="text-wrapper-8">A HIPNOTERAPIA</div>
-        </div>
-        <div className="benefcios">
-          <p className="p">
-          A hipnoterapia oferece vários benefícios, incluindo redução de estresse e ansiedade, melhoria do sono,
-          alívio de dores, controle de hábitos prejudiciais, aumento da autoestima, superação de traumas,
-          desenvolvimento de habilidades de enfrentamento, relaxamento profundo e promoção do autoconhecimento, entres
-          outros.
-          </p>
-          <p className="text-wrapper-8">Quais são os seus benefícios?</p>
-        </div>
-        <div className="tratamentos">
-          <p className="inicialmente">
-          Inicialmente realizamos uma anamnésia em nossos pacientes para entendermos qual a origem dos problemas do
-          cliente e qual será o método mais adequado para tratar sua dor. <br />
-          <br />
-          Com isso feito, ele iniciará seu tratamento personalizado com o intuito de amenizar seus problemas até com
-          que eles se curem.
-          </p>
-          <div className="text-wrapper-7">Como funciona nossos tratamentos?</div>
-        </div>
-        <footer className="footer">
-          <div className="text-wrapper">LOGO</div>
-          <p className="desaja-saber-mais-ou">
-          <span className="span">
-          Desaja saber mais ou solucionar seus questionamentos?
-          <br />
-          </span>
-          <span className="text-wrapper-2">Envie sua mensagem</span>
-          </p>
-          <div className="frame">
-          <div className="text-wrapper-3">Digite seu e-mail</div>
-          </div>
-          <div className="div-wrapper">
-          <div className="text-wrapper-4">Conteúdo...</div>
-          </div>
-          <div className="social-media-section">
-            <div className="text-wrapper-5">Nos acompanhe</div>
-            <div className="image-container">
-              <img className="image-rede-social" alt="Instagram" src={instagramImg} />
-              <img className="image-rede-social" alt="Facebook" src={facebookImg} />
-              <img className="image-rede-social" alt="LinkedIn" src={linkedinImg} />
-            </div>
-          </div>
-          <div className="text-wrapper-6">Contatos</div>
-          <p className="whatsapp">
-          WhatsApp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          11 95336-1445
-          <br />
-          Recepção&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11
-          3845-4050
-          <br />
-          E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          contato@XXXXXX.com.br
-          </p>
-        </footer>
-      </div>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
