@@ -1,10 +1,15 @@
+import PropTypes from "prop-types";
 import React from "react";
 import "./botao.css";
 
-export const Botao = () => {
+export const Botao = ({ className, divClassName, text = "Texto" }) => {
     return (
-        <div className="Botao">
-            <div className="Botao" />
+        <div className={`bot-o ${className}`}>
+            <div className={`texto ${divClassName}`}>{text}</div>
         </div>
     );
+};
+
+Botao.propTypes = {
+    text: PropTypes.string,
 };

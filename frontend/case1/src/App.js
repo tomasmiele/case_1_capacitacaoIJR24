@@ -1,12 +1,16 @@
 import  { Botao }  from "./componentes/botao/botao";
 import './App.css';
+import instagramImg from './images/instagram.png';
+import facebookImg from './images/facebook.png';
+import linkedinImg from './images/linkedin.png';
+import login from './images/login-icon.png';
 
 function App() {
   return (
     <div className="home">
       <div className="div">
         <div className="navbar">
-          <img className="usurio" alt="Usurio" src="login-icon.png" />
+          <img className="usurio" alt="Usurio" src={login} />
           <div className="text-wrapper-10">Contato</div>
           <div className="text-wrapper-12">Tratamentos</div>
           <div className="text-wrapper-11">Benefícios</div>
@@ -17,7 +21,7 @@ function App() {
           <p className="text-wrapper-9">
           Explore a hipnoterapia e encontre seu caminho para o bem-estar e a harmonia interior
           </p>
-          <Botao className="Botao" divClassName="bot-o-instance" text="Agende sua consulta" />
+          <Botao className="boto" divClassName="bot-o-instance" text="Agende sua consulta" />
         </div>
         <div className="hipnoterapia">
           <p className="a-hipnoterapia-uma-t">
@@ -65,21 +69,25 @@ function App() {
           <div className="div-wrapper">
           <div className="text-wrapper-4">Conteúdo...</div>
           </div>
-          <div className="text-wrapper-5">Nos acompanhe</div>
+          <div className="social-media-section">
+            <div className="text-wrapper-5">Nos acompanhe</div>
+            <div className="image-container">
+              <img className="image-rede-social" alt="Instagram" src={instagramImg} />
+              <img className="image-rede-social" alt="Facebook" src={facebookImg} />
+              <img className="image-rede-social" alt="LinkedIn" src={linkedinImg} />
+            </div>
+          </div>
           <div className="text-wrapper-6">Contatos</div>
           <p className="whatsapp">
           WhatsApp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           11 95336-1445
           <br />
-          Recepção&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11
+          Recepção&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11
           3845-4050
           <br />
           E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           contato@XXXXXX.com.br
           </p>
-          <img className="image" alt="Image" src="login-icon-2.png" />
-          <img className="image" alt="Image" src="login-icon-3.png" />
-          <img className="image" alt="Image" src="login-icon-4.png" />
         </footer>
       </div>
     </div>
