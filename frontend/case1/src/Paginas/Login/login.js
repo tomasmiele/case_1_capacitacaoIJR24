@@ -3,7 +3,7 @@ import './login.css';
 import  { Botao }  from "../../componentes/botao/botao";
 import  { FormularioLogin }  from "../../componentes/formularioLogin/formularioLogin";
 import  { Seta }  from "../../componentes/seta/seta";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 export const Login = () => {
@@ -11,6 +11,7 @@ export const Login = () => {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
     const [responseData, setResponseData] = useState(null);
+    const navigate = useNavigate();
 
     const logarUsuario = (email, senha) => {
         const data = {
@@ -23,6 +24,11 @@ export const Login = () => {
             setEmail("");
             setSenha("");
             setResponseData(response.data.mensagem);
+            if (email.includes('@empresa.com')) {
+                navigate('/cadastro');
+            } else {
+                navigate('/');
+            }
             });
     };
 

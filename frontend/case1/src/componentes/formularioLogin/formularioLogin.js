@@ -6,7 +6,8 @@ export function FormularioLogin({ email, setEmail, senha, setSenha, onSubmit }){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        onSubmit(email, senha);
+        const emailEmpresa = email.includes('@empresa.com');
+        onSubmit(email, senha, emailEmpresa);
     };
 
     return(
@@ -27,7 +28,8 @@ export function FormularioLogin({ email, setEmail, senha, setSenha, onSubmit }){
                 onChange={ (event)=>{setSenha(event.target.value)} }
                 value={senha}
             />
-            <button type="submit"><Botao text="Entrar" /></button>
+            <button type="submit">
+                <Botao text="Entrar" /></button>
         </form>
     );
 }
