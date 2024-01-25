@@ -35,17 +35,17 @@ def cadastro(request):
         except Usuario.DoesNotExist:
             raise Http404()
 
-        if usuario in all_users:
-            dic = erro('Usuário já foi cadastrado e estão tentando cadastrá-lo novamente', info_essencial)
-            return JsonResponse(dic)
+        for i in all_users:
+            if usuario.nome == i.nome and data['email'] == i.user.email:
+                info_essencial['valido'] = False
+                return JsonResponse(info_essencial)
         
         user = User.objects.create_user(data['email'], data['email'], data['senha'])
         usuario.user = user
         usuario.save()
 
-        token_usuario = validacao(usuario.user.email, data['senha'])
-        #info_essencial['token'] = token_usuario['token']
-        info_essencial['mensagem'] = 'Usuário foi validado'
+        validacaoUsuario = validacao(usuario.user.email, data['senha'])
+        info_essencial['validacao'] = validacaoUsuario['valido']
 
         return JsonResponse(info_essencial)
 
@@ -63,12 +63,8 @@ def login(request):
         if foi_validado['valido'] == True:
             info_login = {'email': login.email, 
                           'senha': login.senha,
-                          'mensagem': "Usuário existe e já foi validado"}
+                          'valido': True}
             return JsonResponse(info_login)
         else:
-            dic = erro("Usuário não existe é necessário cadastrá-lo", {})
-            return JsonResponse(dic)
-    
-def erro(tipo, dic):
-    dic['mensagem'] = tipo
-    return dic
+            info_login = {'valido': False}
+            return JsonResponse(info_login)
