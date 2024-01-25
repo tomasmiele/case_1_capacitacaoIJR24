@@ -28,7 +28,7 @@ export const Login = () => {
             console.log(response.data.valido)
 
             if (response.data.valido === true) {
-                if (email.includes('@empresa.com')) {
+                if (email.includes('@menteserena.com')) {
                     navigate('/terapeutas');
                 } else {
                     navigate('/consultas');
