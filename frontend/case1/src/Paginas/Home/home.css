@@ -427,10 +427,6 @@
   display: flex; 
   color: #A9CCE3;
 }
-
-.home .botoes:hover{
-  color: #7fcdcd;
-}
   
   .home .usurio {
     height: 55px;
