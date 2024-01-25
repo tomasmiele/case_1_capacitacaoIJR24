@@ -10,13 +10,17 @@ export const Agendar = () => {
 
     const [dia, setDia] = useState("");
     const [horario, setHorario] = useState("");
+    const [servico, setServico] = useState("");
     const [terapeuta, setTerapeuta] = useState("");
+    const [extra, setExtra] = useState("");
 
-    const agendarTerapia = (dia, horario, terapeuta) => {
+    const agendarTerapia = (dia, horario, servico, terapeuta, extra) => {
         const data = {
             "dia": dia,
             "horario": horario,
+            "servico": servico,
             "terapeuta": terapeuta,
+            "extra": extra,
         };
     };
 
@@ -39,7 +43,9 @@ export const Agendar = () => {
                     <FormularioAgendar 
                             dia={dia} setDia={setDia}
                             horario={horario} setHorario={setHorario}
+                            servico={servico} setServico={setServico}
                             terapeuta={terapeuta} setTerapeuta={setTerapeuta}
+                            extra={extra} setExtra={setExtra}
                             onSubmit={agendarTerapia}
                         />
                 </div>

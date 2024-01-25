@@ -3,11 +3,11 @@ import "./formularioAgendar.css";
 import  { Botao }  from "../botao/botao";
 import { Link } from "react-router-dom";
 
-export function FormularioAgendar({dia, setDia, horario, setHorario, terapeuta, setTerapeuta, onSubmit }){
+export function FormularioAgendar({dia, setDia, horario, setHorario, servico, setServico, terapeuta, setTerapeuta, extra, setExtra, onSubmit}){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        onSubmit(dia, horario, terapeuta);
+        onSubmit(dia, horario, servico, terapeuta, extra);
     };
 
     return(
@@ -30,11 +30,27 @@ export function FormularioAgendar({dia, setDia, horario, setHorario, terapeuta, 
             />
             <input 
                 className="caixa-de-texto"
+                placeholder="Serviço..."
+                type="text" 
+                name="servico"
+                onChange={ (event)=>{setServico(event.target.value)} }
+                value={servico}
+            />
+            <input 
+                className="caixa-de-texto"
                 placeholder="Terapeuta..."
                 type="text" 
                 name="terapeuta"
                 onChange={ (event)=>{setTerapeuta(event.target.value)} }
                 value={terapeuta}
+            />
+            <input 
+                className="caixa-de-texto"
+                placeholder="Alguma queixa?"
+                type="text" 
+                name="extra"
+                onChange={ (event)=>{setExtra(event.target.value)} }
+                value={extra}
             />
             <Link to="/consultas"><button type="submit"><Botao text="Agendar" /></button></Link>
         </form>
