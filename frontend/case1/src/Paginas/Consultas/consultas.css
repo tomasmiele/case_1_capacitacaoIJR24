@@ -71,6 +71,7 @@
     padding: 0.5rem;
     height: 75%;
     width: 90%;
+    border-radius: 5%;
 }
 
 .consultas .cards {
@@ -85,6 +86,7 @@
 .consultas .card {
     color: #A9CCE3;
     border: 0.1rem solid #4b6eaf;
+    width: 40%;
 }
 
 .consultas .tituloCard {
@@ -96,3 +98,10 @@
     font-size: 1rem;
     font-family: "Archivo-Regular", Helvetica;
 }
+
+.consultas .logo{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+  }

@@ -86,6 +86,7 @@
 .terapeutas .card {
     color: #A9CCE3;
     border: 0.1rem solid #4b6eaf;
+    width: 40%;
 }
 
 .terapeutas .tituloCard {
@@ -97,3 +98,10 @@
     font-size: 1rem;
     font-family: "Archivo-Regular", Helvetica;
 }
+
+.terapeutas .logo{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+  }

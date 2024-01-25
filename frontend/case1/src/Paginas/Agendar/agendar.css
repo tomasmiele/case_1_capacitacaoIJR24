@@ -72,6 +72,7 @@
     padding: 0.5rem;
     height: 75%;
     width: 90%;
+    border-radius: 5%;
 }
 
 .agendar .cards {
@@ -89,7 +90,8 @@
 }
 
 .agendar .tituloCard {
-    font-size: 2rem;
+    color: #4b6eaf;;
+    font-size: 3rem;
     font-family: "Archivo-Regular", Helvetica;
 }
 
@@ -103,3 +105,10 @@
     flex-direction: row;
     width: 100%;
 }
+
+.agendar .logo{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+  }

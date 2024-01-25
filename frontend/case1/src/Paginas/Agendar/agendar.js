@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './agendar.css';
-import  { Botao }  from "../../componentes/botao/botao";
+import logo from '../../images/logo.png'
 import  { Seta }  from "../../componentes/seta/seta";
 import { Link } from "react-router-dom";
 import login from '../../images/login-icon.png';
@@ -24,7 +24,7 @@ export const Agendar = () => {
         <div className="agendar">
             <div className="overlap-group-wrapper">
                 <div className="navbar">
-                    <div className="">LOGO</div>
+                    <img className="logo" alt="logo" src={logo} />
                     <div className="opcoes">
                         <Link to="/"><div className="botosCamuflados">Site</div></Link>
                         <Link to="/consultas"><div className="botosCamuflados">Ver Consultas</div></Link>
@@ -35,6 +35,7 @@ export const Agendar = () => {
                     <div className="voltar">
                         <Link to="/consultas"><Seta/></Link>
                     </div>
+                    <div className="tituloCard">Agende sua consulta!</div>
                     <FormularioAgendar 
                             dia={dia} setDia={setDia}
                             horario={horario} setHorario={setHorario}
