@@ -12,7 +12,7 @@ export const Consultas = () => {
                     <div className="">LOGO</div>
                     <div className="opcoes">
                         <Link to="/"><div className="botosCamuflados">Site</div></Link>
-                        <Link to="/"><div className="botosCamuflados">Marcar Consultas</div></Link>
+                        <Link to="/agendar"><div className="botosCamuflados">Marcar Consultas</div></Link>
                     </div>
                     <img className="usurio" alt="Usurio" src={login} />
                 </div>
@@ -45,7 +45,7 @@ export const Consultas = () => {
                             <p className="subtituloCard">Endereço: Rua xxx</p>
                         </div>
                     </div>
-                    <Link to="/cadastro"><Botao text="Agende uma nova consulta" /></Link>
+                    <Link to="/agendar"><Botao text="Agende uma nova consulta" /></Link>
                 </div>
             </div>
         </div>

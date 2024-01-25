@@ -4,6 +4,7 @@ import Home from "./Paginas/Home/home"
 import Login from "./Paginas/Login/login"
 import Cadastro from "./Paginas/Cadastro/cadastro"
 import Consultas from "./Paginas/Consultas/consultas"
+import Agendar from "./Paginas/Agendar/agendar"
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/consultas",
     element: <Consultas></Consultas>
+  },
+  {
+    path: "/agendar",
+    element: <Agendar></Agendar>
   },
 ])
 
