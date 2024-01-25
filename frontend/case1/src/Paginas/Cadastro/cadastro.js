@@ -29,8 +29,8 @@ export const Cadastro = () => {
             if (email.trim() === '' || senha.trim() === '' || nome.trim() === '') { // buga nao sei pq
                 navigate('/cadastro');
             } 
-            else if (email.includes('@empresa.com') && senha.trim() === '' || nome.trim() === '') {
-                navigate('/cadastro');
+            else if (email.includes('@empresa.com') && senha.trim() !== '' || nome.trim() !== '') {
+                navigate('/terapeutas');
             } else {
                 navigate('/consultas');
             }

@@ -5,6 +5,7 @@ import Login from "./Paginas/Login/login"
 import Cadastro from "./Paginas/Cadastro/cadastro"
 import Consultas from "./Paginas/Consultas/consultas"
 import Agendar from "./Paginas/Agendar/agendar"
+import Terapeutas from "./Paginas/Terapeutas/terapeutas"
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/agendar",
     element: <Agendar></Agendar>
+  },
+  {
+    path: "/terapeutas",
+    element: <Terapeutas></Terapeutas>
   },
 ])
 

@@ -27,8 +27,8 @@ export const Login = () => {
             if (email.trim() === '' || senha.trim() === ''){
                 navigate('/login');
             }
-            else if (email.includes('@empresa.com') && senha.trim() === '') {
-                navigate('/cadastro');
+            else if (email.includes('@empresa.com') && senha.trim() !== '') {
+                navigate('/terapeutas');
             } else {
                 navigate('/consultas');
             }

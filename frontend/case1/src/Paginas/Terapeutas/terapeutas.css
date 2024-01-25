@@ -1,4 +1,4 @@
-.consultas {
+.terapeutas {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.consultas .overlap-group-wrapper {
+.terapeutas .overlap-group-wrapper {
     background-color: #ffffff;
     background-image: url(../../images/hipnoterapia.png);
     background-size: cover;
@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-.consultas .navbar {
+.terapeutas .navbar {
     background-color: #4b6eaf;
     height: 80px;
     position: absolute;
@@ -31,14 +31,14 @@
     justify-content: space-between;
 }
 
-.consultas .usurio {
+.terapeutas .usurio {
     height: 55px;
     object-fit: cover;
     top: 15px;
     width: 55px;
   }
 
-.consultas .opcoes {
+.terapeutas .opcoes {
     display: flex;
     flex-direction: row;
     height: 2rem;
@@ -56,24 +56,25 @@
     color: inherit;
 }
 
-.consultas .botosCamuflados {
+.terapeutas .botosCamuflados {
     display: flex; 
     text-decoration-line: none !important;
     color: #A9CCE3;
 }
 
-.consultas .caixaBrancaConsultas {
+.terapeutas .caixaBrancaTerapeutas {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: white;
+    gap: 5rem;
     padding: 0.5rem;
     height: 75%;
     width: 90%;
 }
 
-.consultas .cards {
+.terapeutas .cards {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,17 +83,17 @@
     width: 90%;
 }
 
-.consultas .card {
+.terapeutas .card {
     color: #A9CCE3;
     border: 0.1rem solid #4b6eaf;
 }
 
-.consultas .tituloCard {
+.terapeutas .tituloCard {
     font-size: 2rem;
     font-family: "Archivo-Regular", Helvetica;
 }
 
-.consultas .subtituloCard {
+.terapeutas .subtituloCard {
     font-size: 1rem;
     font-family: "Archivo-Regular", Helvetica;
 }
