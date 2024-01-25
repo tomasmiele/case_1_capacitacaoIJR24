@@ -62,6 +62,10 @@
     color: #A9CCE3;
 }
 
+.consultas .botosCamuflados:hover {
+    color: #7fcdcd;
+}
+
 .consultas .caixaBrancaConsultas {
     display: flex;
     flex-direction: column;

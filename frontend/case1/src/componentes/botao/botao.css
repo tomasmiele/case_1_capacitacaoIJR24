@@ -9,6 +9,10 @@
     justify-content: center;
 }
 
+.bot-o:hover{
+    background-color: #5c89dc;
+}
+
 .bot-o .texto {
     color: #7fcdcd;
     font-family: "Varela-Regular", Helvetica;

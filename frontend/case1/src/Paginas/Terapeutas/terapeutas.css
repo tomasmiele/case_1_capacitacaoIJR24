@@ -62,6 +62,10 @@
     color: #A9CCE3;
 }
 
+.terapeutas .botosCamuflados:hover {
+    color: #7fcdcd;
+}
+
 .terapeutas .caixaBrancaTerapeutas {
     display: flex;
     flex-direction: column;

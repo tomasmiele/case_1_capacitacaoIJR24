@@ -62,6 +62,10 @@
     color: #A9CCE3;
 }
 
+.agendar .botosCamuflados:hover {
+    color: #7fcdcd;
+}
+
 .agendar .caixaBrancaAgendar {
     display: flex;
     flex-direction: column;

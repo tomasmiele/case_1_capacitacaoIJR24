@@ -12,7 +12,7 @@ export const Terapeutas = () => {
                 <div className="navbar">
                     <img className="logo" alt="logo" src={logo} />
                     <div className="opcoes">
-                        <Link to="/"><div className="botosCamuflados">Site</div></Link>
+                        <Link to="/" className="botosCamuflados"><div>Site</div></Link>
                     </div>
                     <img className="usurio" alt="Usurio" src={login} />
                 </div>

@@ -12,8 +12,8 @@ export const Consultas = () => {
                 <div className="navbar">
                     <img className="logo" alt="logo" src={logo} />
                     <div className="opcoes">
-                        <Link to="/"><div className="botosCamuflados">Site</div></Link>
-                        <Link to="/agendar"><div className="botosCamuflados">Marcar Consultas</div></Link>
+                        <Link to="/" className="botosCamuflados"><div>Site</div></Link>
+                        <Link to="/agendar" className="botosCamuflados"><div>Marcar Consultas</div></Link>
                     </div>
                     <img className="usurio" alt="Usurio" src={login} />
                 </div>

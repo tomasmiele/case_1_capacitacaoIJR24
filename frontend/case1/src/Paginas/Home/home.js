@@ -22,7 +22,7 @@ function Home() {
           <img className="logo" alt="logo" src={logo} />
             <div className="opcoes">
               <div className="botoes">Quem somos nós</div>
-              <div className="botoes">o que é hipnoterapia</div>
+              <div className="botoes">O é hipnoterapia</div>
               <div className="botoes">Benefícios</div>
               <div className="botoes">Como funciona?</div>
               <div className="botoes">Tratamentos</div>

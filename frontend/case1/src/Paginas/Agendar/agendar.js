@@ -26,8 +26,8 @@ export const Agendar = () => {
                 <div className="navbar">
                     <img className="logo" alt="logo" src={logo} />
                     <div className="opcoes">
-                        <Link to="/"><div className="botosCamuflados">Site</div></Link>
-                        <Link to="/consultas"><div className="botosCamuflados">Ver Consultas</div></Link>
+                        <Link to="/" className="botosCamuflados"><div>Site</div></Link>
+                        <Link to="/consultas" className="botosCamuflados"><div>Ver Consultas</div></Link>
                     </div>
                     <img className="usurio" alt="Usurio" src={login} />
                 </div>
