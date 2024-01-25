@@ -23,14 +23,18 @@ export const Login = () => {
             .then((response) => {
             setEmail("");
             setSenha("");
-            setResponseData(response.data.mensagem);
-            if (email.trim() === '' || senha.trim() === ''){
-                navigate('/login');
-            }
-            else if (email.includes('@empresa.com') && senha.trim() !== '') {
-                navigate('/terapeutas');
+            setResponseData(response.data.valido);
+
+            console.log(response.data.valido)
+
+            if (response.data.valido === true) {
+                if (email.includes('@empresa.com')) {
+                    navigate('/terapeutas');
+                } else {
+                    navigate('/consultas');
+                }
             } else {
-                navigate('/consultas');
+                navigate('/login');
             }
             });
     };

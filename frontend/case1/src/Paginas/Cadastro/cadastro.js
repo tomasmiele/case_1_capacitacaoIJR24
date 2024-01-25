@@ -25,14 +25,18 @@ export const Cadastro = () => {
             setNome("");
             setEmail("");
             setSenha("");
-            setResponseData(response.data.mensagem);
-            if (email.trim() === '' || senha.trim() === '' || nome.trim() === '') { // buga nao sei pq
-                navigate('/cadastro');
-            } 
-            else if (email.includes('@empresa.com') && senha.trim() !== '' || nome.trim() !== '') {
-                navigate('/terapeutas');
+            setResponseData(response.data.valido);
+
+            console.log(response.data.valido)
+
+            if (response.data.valido === true) {
+                if (email.includes('@empresa.com')) {
+                    navigate('/terapeutas');
+                } else {
+                    navigate('/consultas');
+                }
             } else {
-                navigate('/consultas');
+                navigate('/cadastro');
             }
             });
     };

@@ -45,7 +45,7 @@ def cadastro(request):
         usuario.save()
 
         validacaoUsuario = validacao(usuario.user.email, data['senha'])
-        info_essencial['validacao'] = validacaoUsuario['valido']
+        info_essencial['valido'] = validacaoUsuario['valido']
 
         return JsonResponse(info_essencial)
 
