@@ -7,10 +7,10 @@
   }
   
   .home .div {
-    background-color: #ffffff;
-    max-width: 1440px; 
+    background-color: #ffffff; 
     width: 100%;
     position: relative;
+    height: 2110px;
   }
   
   @media (max-width: 768px) {
@@ -90,10 +90,12 @@
   .home .footer {
     background-color: #4b6eaf;
     height: 80px;
-    left: 0;
-    position: absolute;
-    top: 1340px;
+    position: relative;
+    top: 1085px;
     width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
   }
   
   .home .text-wrapper {
@@ -246,9 +248,8 @@
   .home .tratamentos {
     background-color: #ffffff;
     height: 320px;
-    left: 0;
     position: absolute;
-    top: 1020px;
+    top: 1340px;
     width: 1440px;
   }
   
@@ -258,7 +259,7 @@
     font-size: 20px;
     font-weight: 400;
     height: 160px;
-    left: 355px;
+    left: 420px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
@@ -272,7 +273,7 @@
     font-size: 40px;
     font-weight: 400;
     height: 53px;
-    left: 355px;
+    left: 420px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
@@ -282,12 +283,15 @@
   }
   
   .home .benefcios {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     height: 320px;
-    left: 0;
-    position: absolute;
+    overflow: hidden;
+    position: relative;
     top: 700px;
-    width: 1440px;
+    width: auto;
+    align-items: flex-end;
   }
   
   .home .p {
@@ -320,13 +324,15 @@
   }
   
   .home .hipnoterapia {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     height: 320px;
-    left: 0;
     overflow: hidden;
-    position: absolute;
-    top: 380px;
-    width: 1440px;
+    position: relative;
+    top: 700px;
+    width: auto;
+    align-items: flex-end;
   }
   
   .home .a-hipnoterapia-uma-t {
@@ -345,13 +351,12 @@
   
   .home .foto {
     background-image: url(../../images/clinicas-populares.png);
-    background-position: 50% 50%;
+    background-position: 50% 20%;
     background-size: cover;
     height: 300px;
-    left: 0;
     position: absolute;
     top: 80px;
-    width: 1440px;
+    width: 100%;
   }
   
   .home .boto {
@@ -395,7 +400,33 @@
     position: absolute;
     top: 0;
     width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
   }
+
+.home .opcoes {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  width: 65%;
+  color: #a9cce3;
+  font-family: "Archivo-Regular", Helvetica;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.home .botoes {
+  display: flex; 
+  color: #A9CCE3;
+}
   
   .home .usurio {
     height: 55px;
@@ -453,3 +484,105 @@
     white-space: nowrap;
     width: 208px;
   }
+
+  .home .logo{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+  }
+
+  .home .logo2{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+  }
+
+  .home .divLogo {
+    left: 0;
+    height: 80px;
+    background-color: none;
+    position: relative;
+    top: 1005px;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+  }
+
+.home .nos {
+  background-color: #ffffff;
+  height: 320px;
+  position: absolute;
+  width: 1440px;
+  top: 380px;
+}
+
+.home .cerebro{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.home .benefciosFoto {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.home .quantroTratamentos {
+  display: flex;
+  flex-direction: column;
+  top: 1050px;
+  height: 320px;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.home .tituloTratamentos {
+  display: flex;
+  color: #4b6eaf;
+  font-family: "Varela-Regular", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  width: auto;
+}
+
+.home .cards {
+  display: flex;
+  flex-direction: row;
+  font-family: "Varela-Regular", Helvetica;
+  font-weight: 400;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 1rem;
+}
+
+.home .card {
+  display: flex;
+  flex-direction: column;
+  color: #a9cce3;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+.home .cardTitulo {
+  color: #4b6eaf;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}

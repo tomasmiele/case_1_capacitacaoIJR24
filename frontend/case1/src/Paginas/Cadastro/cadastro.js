@@ -46,7 +46,7 @@ export const Cadastro = () => {
             <div className="overlap-group-wrapper">
                 <Link to="/login"><Seta/></Link>
                 <div className="infos">
-                    <div className="titulo">Nome da empresa</div>
+                    <div className="titulo">MenteSerena</div>
                     <div className="caixaBrancaFormulario">
                         <div className="subtitulo">Página de registro</div>
                         <FormularioCadastro 

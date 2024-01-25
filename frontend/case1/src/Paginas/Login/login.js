@@ -44,7 +44,7 @@ export const Login = () => {
             <div className="overlap-group-wrapper">
                 <Link to="/"><Seta/></Link>
                 <div className="infos">
-                    <div className="titulo">Nome da empresa</div>
+                    <div className="titulo">MenteSerena</div>
                     <div className="caixaBrancaFormulario">
                         <div className="subtitulo">Não possui conta?</div>
                         <FormularioLogin 
