@@ -6,7 +6,8 @@ export function FormularioCadastro({ nome, setNome, email, setEmail, senha, setS
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        onSubmit(nome, email, senha);
+        const emailEmpresa = email.includes('@empresa.com');
+        onSubmit(nome, email, senha, emailEmpresa);
     };
 
     return(

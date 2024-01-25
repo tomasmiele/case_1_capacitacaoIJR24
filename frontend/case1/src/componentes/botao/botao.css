@@ -3,7 +3,10 @@
     border-radius: 20px;
     height: 60px;
     position: relative;
-    width: 120px;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bot-o .texto {
@@ -11,11 +14,8 @@
     font-family: "Varela-Regular", Helvetica;
     font-size: 20px;
     font-weight: 400;
-    left: 0;
     letter-spacing: 0;
     line-height: normal;
-    position: absolute;
     text-align: center;
-    top: 16px;
-    width: 120px;
+    width: 90%; 
 }

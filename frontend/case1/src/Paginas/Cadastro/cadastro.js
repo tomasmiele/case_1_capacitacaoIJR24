@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './cadastro.css';
 import  { FormularioCadastro }  from "../../componentes/formularioCadastro/formularioCadastro";
 import  { Seta }  from "../../componentes/seta/seta";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 export const Cadastro = () => {
@@ -11,8 +11,9 @@ export const Cadastro = () => {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
     const [responseData, setResponseData] = useState(null);
+    const navigate = useNavigate();
 
-    const cadastrarUsuario = (email, senha) => {
+    const cadastrarUsuario = (nome, email, senha) => {
         const data = {
             "nome": nome,
             "email": email,
@@ -25,10 +26,16 @@ export const Cadastro = () => {
             setEmail("");
             setSenha("");
             setResponseData(response.data.mensagem);
+            if (email.trim() === '' || senha.trim() === '' || nome.trim() === '') { // buga nao sei pq
+                navigate('/cadastro');
+            } 
+            else if (email.includes('@empresa.com') && senha.trim() === '' || nome.trim() === '') {
+                navigate('/cadastro');
+            } else {
+                navigate('/consultas');
+            }
             });
     };
-
-    console.log(responseData)
 
     return (
         <div className="cadastro">

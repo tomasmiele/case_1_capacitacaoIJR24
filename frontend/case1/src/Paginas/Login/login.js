@@ -24,10 +24,13 @@ export const Login = () => {
             setEmail("");
             setSenha("");
             setResponseData(response.data.mensagem);
-            if (email.includes('@empresa.com')) {
+            if (email.trim() === '' || senha.trim() === ''){
+                navigate('/login');
+            }
+            else if (email.includes('@empresa.com') && senha.trim() === '') {
                 navigate('/cadastro');
             } else {
-                navigate('/');
+                navigate('/consultas');
             }
             });
     };
