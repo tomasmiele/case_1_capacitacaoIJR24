@@ -27,8 +27,6 @@ export const Cadastro = () => {
             setSenha("");
             setResponseData(response.data.valido);
 
-            console.log(response.data.valido)
-
             if (response.data.valido === true) {
                 if (email.includes('@menteserena.com')) {
                     navigate('/terapeutas');

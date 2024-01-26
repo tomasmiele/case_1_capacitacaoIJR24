@@ -30,6 +30,10 @@ def cadastro(request):
         info_essencial = {"nome": data['nome'],
                                 "email": data['email']}
         
+        if data['nome'] == '' or data['email'] == '' or data['senha'] == '':
+            info_essencial['valido'] = False
+            return JsonResponse(info_essencial)
+        
         try:
             all_users = Usuario.objects.all()
         except Usuario.DoesNotExist:
