@@ -23,13 +23,13 @@ export const Consultas = () => {
                             <p className="tituloCard">Hipnoterapia Clássica</p>
                             <p className="tituloCard">02/02/2024 - 16:00</p>
                             <p className="subtituloCard">Terapeuta: Marcela</p>
-                            <p className="subtituloCard">Endereço: Rua xxx</p>
+                            <p className="subtituloCard">Endereço: Perto da Av. Paulista</p>
                         </div>
                         <div className="card">
                             <p className="tituloCard">Hipnoterapia Ericksoniana</p>
                             <p className="tituloCard">05/02/2024 - 16:00</p>
                             <p className="subtituloCard">Terapeuta: Vitória</p>
-                            <p className="subtituloCard">Endereço: Rua xxx</p>
+                            <p className="subtituloCard">Endereço: Perto da Av. Paulista</p>
                         </div>
                     </div>
                     <div className="cards">
@@ -37,13 +37,13 @@ export const Consultas = () => {
                             <p className="tituloCard">Aromaterapia</p>
                             <p className="tituloCard">07/02/2024 - 18:00</p>
                             <p className="subtituloCard">Terapeuta: Giorgia</p>
-                            <p className="subtituloCard">Endereço: Rua xxx</p>
+                            <p className="subtituloCard">Endereço: Perto da Av. Paulista</p>
                         </div>
                         <div className="card">
                             <p className="tituloCard">Acupuntura</p>
                             <p className="tituloCard">09/02/2024 - 07:00</p>
                             <p className="subtituloCard">Terapeuta: Gabriela</p>
-                            <p className="subtituloCard">Endereço: Rua xxx</p>
+                            <p className="subtituloCard">Endereço: Perto da Av. Paulista</p>
                         </div>
                     </div>
                     <Link to="/agendar"><Botao text="Agende uma nova consulta" /></Link>
